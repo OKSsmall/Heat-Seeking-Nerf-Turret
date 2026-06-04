@@ -141,7 +141,7 @@ When in doubt, pick higher torque and test — servos underpowered will twitch, 
 ---
 
 ## Shopping Checklist (copy-paste)
-- [ ] Raspberry Pi 4 (4GB)
+- [ ] Raspberry Pi 5 
 - [ ] Raspberry Pi Camera Module 3
 - [ ] Micro SD card (32GB)
 - [ ] XSHOT Insanity (or chosen blaster)

@@ -1,7 +1,5 @@
 This file lists the parts, recommended models, approximate costs, and notes for building the Heat-Seeking Nerf Turret (minigun-style). Use this as your shopping checklist.
 
-THIS LIST IS HEAVILY INFLUENCED BY AI
-
 ---
 
 ## Summary (quick)
@@ -12,35 +10,36 @@ THIS LIST IS HEAVILY INFLUENCED BY AI
 
 ## Core Components (required)
 
-1. Raspberry Pi 4 (4GB) — Qty 1 — $60–$80
+1. Raspberry Pi 5 (8GB) — Qty 1 — $189.95
    - Runs the control server and/or receives commands.
-   - Alternative: Raspberry Pi 5 if available and you want more CPU headroom.
 
-2. Raspberry Pi Camera Module 3 — Qty 1 — $25–$35
+2. Raspberry Pi Camera Module 3 — Qty 1 — $44.00
    - Direct CSI connection; better integration than USB webcams.
    - Alternative: USB 1080p camera if you plan to run vision on PC instead.
 
-3. Nerf blaster (minigun-style) — Qty 1 — $30–$40
-   - Example: XSHOT Insanity (belt/minigun aesthetic).
+3. Nerf blaster (minigun-style) — Qty 1 — $34.99
+   - XSHOT Insanity Smoking Barrel Blaster with 72 Air Pocket Technology Darts.
    - NOTE: Heavy — select robust servos and reinforce mount when using this.
    - Alternative (lighter): Nerf Stryfe, Maverick, or Jolt for simpler rigs.
 
-4. Pan/Tilt Servos (high-torque, metal-geared) — Qty 2 — $25–$40 each
-   - Recommended: DS3218 or similar digital metal-geared servo (20–25 kg·cm) for heavy gun.
-   - Budget option: MG996R (11 kg·cm) — may be marginal with heavy guns. If you use MG996R, reinforce mounts and test carefully.
+4. Pan/Tilt Servos (high-torque, metal-geared) — Qty 2 — $28.99
+   - AITRIP 30KG Full Metal Gear Digital Servo Motor, 180°.
+   - These are rated 4.8–8.4V and provide good torque for a heavy gun.
 
-5. Fire trigger servo (small) — Qty 1 — $8–$15
-   - MG90S or small digital micro-servo to pull the trigger.
+5. Fire trigger servo (small) — Qty 2 — $8.88
+   - Miuzei MG90S 9G Metal Geared Micro Servo Motor Kit.
    - If the blaster has an integrated motor-start switch, you can also control power to the motor using an electronic switch (MOSFET/relay).
 
-6. Power supply (5–6V, 6A recommended) — Qty 1 — $20–$35
-   - Heavy servos and blaster motor draws mean a robust power supply is needed.
-   - Recommendation: 5V 6A (or dual supplies: 5V for servos + separate 5V/3A for Pi) with common ground.
+6. Power supply (5V, 10A) — Qty 1 — $19.99
+   - 5V 10A Universal Travel Charger with 5.5×2.5mm DC output.
+   - Good for the PCA9685 servo distribution board and the servo bank.
 
-7. Power Distribution Board (for servos) — Qty 1 — $8–$12
+7. Power Distribution Board (for servos) — Qty 1 — $20.89
+   - Kiro&Seeu PCA9685 PWM Servo Motor Driver I2C IIC Module 12-bit 16 Channel.
    - Cleanly distributes 5V/GND to multiple servos; includes screw terminals for reliability.
 
-8. Micro SD Card (32GB or 64GB, Class 10) — Qty 1 — $10–$15
+8. Micro SD Card (32GB, Class 10) — Qty 1 — $20.85
+   - SanDisk Ultra 32GB UHS-I/Class 10 Micro SDHC Memory Card with adapter.
    - For Raspberry Pi OS and code.
 
 9. Jumper wires, connector kit, and female-to-female servo leads — Qty assorted — $10–$20
@@ -51,6 +50,7 @@ THIS LIST IS HEAVILY INFLUENCED BY AI
     - Use PETG for heat resistance and toughness if available.
 
 11. Base/board (plywood/MDF) and metal L-brackets — $15–$30
+    - DEAYOU 10 Pack 11" x 14" 1/4" MDF Wood Boards for Crafts.
     - Sturdy base to prevent tipping and to attach heavy gun.
 
 12. Breadboard & wiring accessories — $10–$15
@@ -140,16 +140,17 @@ When in doubt, pick higher torque and test — servos underpowered will twitch, 
 
 ---
 
-## Shopping Checklist (copy-paste)
-- [ ] Raspberry Pi 5 
+## Shopping Checklist
+- [ ] Raspberry Pi 5 (8GB)
 - [ ] Raspberry Pi Camera Module 3
-- [ ] Micro SD card (32GB)
-- [ ] XSHOT Insanity (or chosen blaster)
-- [ ] 2x high-torque pan/tilt servos (budget/upgrade choice)
-- [ ] 1x fire trigger servo (MG90S)
-- [ ] 5V 6A power supply (or separate Pi + servo supplies)
-- [ ] Power distribution board
-- [ ] Jumper wires, connectors, female servo leads
+- [ ] Micro SD card (SanDisk Ultra 32GB UHS-I/Class 10)
+- [ ] XSHOT Insanity Smoking Barrel Blaster with 72 Air Pocket Technology Darts
+- [ ] 2x AITRIP 30KG Full Metal Gear Digital Servo Motors
+- [ ] 2x Miuzei MG90S 9G Metal Geared Micro Servo Motors
+- [ ] 5V 10A power supply with 5.5x2.5mm output
+- [ ] Kiro&Seeu PCA9685 16-channel PWM servo driver board
+- [ ] Power distribution wiring and connectors
+- [ ] Jumper wires and female-to-female servo leads
 - [ ] 3D printing filament (PLA/PETG)
 - [ ] Mounting hardware, bolts, L-brackets
 - [ ] Safety switch, LED, fuse
